@@ -47,19 +47,30 @@ a{
 .login_text{
     color: var(--color-azul-claro);
 }
-#boton_lupa{
+.boton_lupa{
     border: none;
     background: var(--color-blanco);
     width: 3rem;
 }
 
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px){
+    .cabecera_container{
+        width: 80%;
+        margin-left: 1.3rem;
+        display: flex;
+        gap: 1rem;
+        height: 9vh;
+    }
+    .cabecera__logo{
+        width: 9.8rem;
+    }
+    #invisible{
+        display: none;
+    }
     #busqueda{
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-right: 50%;
     }
     .busqueda_form{
         display: flex;
@@ -70,6 +81,8 @@ a{
         padding: .75rem;
         border-radius: 1.25rem;
         border: none;
+        height: 3rem;
+        width: 14rem;
         background-color: aliceblue; /*tiene que ser blaco */
     }
     .busqueda__input:focus{
@@ -81,7 +94,13 @@ a{
         background: aliceblue;
         border-radius: 2rem;
     }
-    .botonBusqueda_login{
 
+    .login{
+        width: 8.3rem;
+        height: 2.9rem;
+        font-size: 1rem;
     }
+}
+@media screen and (min-width: 1024px) {
+
 }

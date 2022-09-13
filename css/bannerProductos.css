@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("/img/banner.png");
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url("/img/banner-image.png");
     background-size: cover;
     background-position: center;
     justify-content: flex-end;
@@ -44,6 +44,8 @@
     background: var(--color-gris-clarito);
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
+    
 }
 .productos__line{
     display: flex;
@@ -56,7 +58,7 @@
     margin-top: 1rem;
     margin-left: 1rem;
     align-items: center;
-    margin-right: 1.3rem;
+    padding-right: 1.3rem;
 }
 .productos__title{
     color: var(--color-gris);
@@ -78,23 +80,18 @@
     gap: 1rem;
     flex-wrap: wrap;
     margin-top: 1rem;
+    /* max-height: 73vh; */
 }
 .producto__card{
     width: 45%;
     display: flex;
     flex-direction: column;
-    /* background: aqua; */
     height: 15rem;
     gap: .5rem;
 }
-/* .box_text{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    font-size: 1rem;
-} */
 .img_producto{
     width: 100%;
+
 }
 .productos__name{
     font-weight: 500;
@@ -109,4 +106,76 @@
     font-weight: 700;
     font-size: .83rem;
     color: var(--color-azul-claro);
+}
+@media screen and (min-width:425px) and (max-width:768px) {
+    .productos__line{
+        max-height: 50rem;
+    }
+    .img_producto{
+        max-width: 170px;
+    }
+    .producto__card{
+        max-width: 30%;
+    }
+}
+@media screen and (min-width: 768px){
+
+    .banner__titulo{
+        font-size: 3.3rem;
+    }
+    .banner__text{
+        font-size: 1.48rem;
+    }
+    .banner__boton{
+        width: 8.5rem;
+    }
+    .banner_boton_text{
+        font-size: .87rem;
+    }
+    .productos__line{
+        padding-top: 1.5rem;
+    }
+    .productos_head{
+        margin-left: 0;
+    }
+    .productos__box{
+        margin-left: 0;
+    }
+    .img_producto{
+        max-width: 190px;
+    }
+    .producto__card{
+        width: 23%;
+        height: 18rem;
+    }
+    .productos__precio{
+        font-size: .96rem;
+    }
+    .productos__link{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .banner{
+        padding-left: 4rem;
+    }
+    .productos{
+        padding-left: 9rem;
+        padding-right: 4.4rem;
+
+    }
+    .img_producto{
+        max-width: 200px;
+    }
+    .productos__line{
+        max-width: 93%;
+    }
+    .producto__card{
+        max-width: 200px;
+    }
+    .productos__box{
+        gap: 1.7rem;
+    }
+    
+
 }
