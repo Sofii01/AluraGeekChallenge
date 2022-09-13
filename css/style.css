@@ -1,14 +1,22 @@
+@import url("var.css");
+@import url("bannerProductos.css");
+@import url("contacto.css");
 body{
-    font-family: 'raleway';
+    font-family: var(--font-family);
     font-weight: 700;
     box-sizing: border-box;
+    font-style: 'normal';
+}
+a{
+    text-decoration: none;
 }
 
 .menu{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+    background: var(--color-blanco);   
 }
 .cabecera_container{
     width: 85%;
@@ -19,45 +27,61 @@ body{
     align-items: center;
     padding-top: .85rem;
     padding-bottom: .85rem;
+    
 }
 .cabecera__logo{
-    width: 9.3rem;
-}
-.busqueda{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 50%;
+    width: 8.3rem;
 }
 
-.busqueda_form{
-    display: flex;
-    background: aliceblue;
-    border-radius: 2rem;
-}
-.busqueda__input{
-    padding: .75rem;
-    border-radius: 1.25rem;
-    border: none;
-    background-color: aliceblue; /*tiene que ser blaco */
-}
-.busqueda__input:focus{
-    outline: none;
+.invisible{
+    display: none;
 }
 
-.boton_busqueda{
-    border: none;
-    background: aliceblue;
-    border-radius: 2rem;
-}
 .login{
-    width: 9rem;
+    width: 7.3rem;
     height: 2.5rem;
     font-size: 16px;
-    color: aqua;
-    background-color: white;
-    border: solid 2px blue;
+    background-color: var(--color-blanco);
+    border: solid 2px var(--color-azul-claro);
 }
-.botonBusqueda_login{
+.login_text{
+    color: var(--color-azul-claro);
+}
+#boton_lupa{
+    border: none;
+    background: var(--color-blanco);
+    width: 3rem;
+}
 
+
+@media screen and (min-width: 1024px) {
+    #busqueda{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 50%;
+    }
+    .busqueda_form{
+        display: flex;
+        background: aliceblue;
+        border-radius: 2rem;
+    }
+    .busqueda__input{
+        padding: .75rem;
+        border-radius: 1.25rem;
+        border: none;
+        background-color: aliceblue; /*tiene que ser blaco */
+    }
+    .busqueda__input:focus{
+        outline: none;
+    }
+    
+    .boton_busqueda{
+        border: none;
+        background: aliceblue;
+        border-radius: 2rem;
+    }
+    .botonBusqueda_login{
+
+    }
 }
