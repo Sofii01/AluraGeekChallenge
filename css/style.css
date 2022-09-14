@@ -1,6 +1,7 @@
 @import url("var.css");
 @import url("bannerProductos.css");
 @import url("contacto.css");
+@import url("loginStyle.css");
 body{
     font-family: var(--font-family);
     font-weight: 700;

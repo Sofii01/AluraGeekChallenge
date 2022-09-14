@@ -70,7 +70,6 @@ section a{
     margin-top: 1.3rem;
 }
 .footer_text{
-    margin-top: 1rem;
     font-weight: 500;
     color: var(--color-gris);
     text-align: center;
@@ -99,6 +98,7 @@ section a{
     .contacto{
         align-items: flex-start;
         gap: 4rem;
+        max-height: 38vh;
     }
     .contacto__list{
         width: 45%;
@@ -117,6 +117,9 @@ section a{
         margin-top: 0;
         width: 45%;
         align-items: flex-start;
+    }
+    .boton_submit{
+        height: 5vh;
     }
 
 }

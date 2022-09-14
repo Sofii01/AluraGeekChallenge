@@ -1,0 +1,53 @@
+@import url("var.css");
+
+.section_login{
+    background: var(--color-gris-clarito);
+    padding-left: 20%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+.login_conteiner{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 1.5rem;
+}
+.texto_inicio{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-gris);
+}
+.input_correo, .input_contra{
+    border: none;
+    height: 3rem;
+    width: 100%;
+    max-width: 13rem;
+    font-family: var(--font-family);
+}
+
+.boton_inicio{
+    border: none;
+    background: var(--color-azul-claro);
+    height: 2.5rem;
+    max-width: 5rem;
+    width:40%;
+}
+.boton_inicio_texto{
+    color: var(--color-blanco);
+}
+
+@media screen and (min-width:768px) {
+    .input_correo, .input_contra{
+        max-width: 15rem;
+    }
+    .boton_inicio{
+        max-width: 7rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .input_correo, .input_contra, .boton_inicio{
+        max-width: 50%;
+    }    
+}
