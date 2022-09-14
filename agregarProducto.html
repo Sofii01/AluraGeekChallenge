@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgregarProductos</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="menu">
+        <div class="cabecera_container">
+            <img src="img/LogoLogo.png" alt="img de alura geek" class="cabecera__logo">
+
+            <div id="busqueda" class="invisible">
+                <form action="" class="busqueda_form">
+                    <input type="search" class="busqueda__input" placeholder="¿Que deseas buscar?" name="busqueda">
+                    <button class="boton_busqueda"><img src="img/lupa.png" alt="lupa" class="img_busqueda"></button>
+                </form>
+            </div>
+            <button class="login"><a href="#boton_menuAdm" class="login_text">Menu administrador</a></button>
+            <button id="invisible" class="boton_lupa"><img src="img/Vectormoblie.png" alt="lupa"
+                    class="img_busqueda"></button>
+        </div>
+
+    </header>
+
+    <section class="nuevo_producto">
+        <div class="nuevo_producto_container">
+            <h1 class="producto_title">Agregar nuevo producto</h1>
+            <div class="producto_form">
+                <input type="url" class="producto_input" placeholder="Url de la imagen">
+                <input type="text" class="producto_input" placeholder="Categorias">
+                <input type="text" class="producto_input" placeholder="Nombre del produto">
+                <input type="number" class="producto_input" placeholder="Precio del producto">
+                <textarea name="descripcion del producto" class="producto_textarea" cols="30" rows="10" placeholder="Descripcion del producto"></textarea>
+
+            </div>
+
+            <button class="boton_agregar">Agregar producto</button>
+        </div>
+    </section>
+
+
+    <section class="contacto">
+        <div class="contacto__list">
+            <div class="contacto__title">
+                <img src="img/LogoLogo.png" alt="img de alura geek" class="contacto__logo">
+            </div>
+            <div class="contacto_link">
+                <a href="#">Quienes somos</a>
+                <a href="#">Politica de privacidad</a>
+                <a href="#">Programa de fidelidad</a>
+                <a href="#">Nuestras Tiendas</a>
+                <a href="#">Quiero ser franquiciado</a>
+                <a href="#">Anuncie aqui</a>
+            </div>
+
+        </div>
+        <div class="contacto_form">
+            <p class="contacto_text">Hable con nosotros</p>
+            <input type="text" placeholder="Nombre" class="contacto_input">
+            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"
+                class="contacto_textarea"></textarea>
+            <button class="boton_submit">Enviar mensaje</button>
+        </div>
+
+    </section>
+    <section class="footer">
+        <p class="footer_text">Desarrollado por Sofia Britos</p>
+        <p class="footer_text">2022</p>
+    </section>
+</body>
+
+</html>
