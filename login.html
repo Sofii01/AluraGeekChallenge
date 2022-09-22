@@ -5,22 +5,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
     <header class="menu">
         <div class="cabecera_container">
-            <img src="img/LogoLogo.png" alt="img de alura geek" class="cabecera__logo">
+            <img src="/assets/img/LogoLogo.png" alt="img de alura geek" class="cabecera__logo">
 
             <div id="busqueda" class="invisible">
                 <form action="" class="busqueda_form">
                     <input type="search" class="busqueda__input" placeholder="¿Que deseas buscar?" name="busqueda">
-                    <button class="boton_busqueda"><img src="img/lupa.png" alt="lupa" class="img_busqueda"></button>
+                    <button class="boton_busqueda"><img src="/assets/img/lupa.png" alt="lupa" class="img_busqueda"></button>
                 </form>
             </div>
-            <button id="invisible" class="boton_lupa"><img src="img/Vectormoblie.png" alt="lupa"
+            <button id="invisible" class="boton_lupa"><img src="/assets/img/Vectormoblie.png" alt="lupa"
                     class="img_busqueda"></button>
 
 
@@ -30,9 +30,10 @@
     <section class="section_login">
         <div class="login_conteiner">
             <p class="texto_inicio">Iniciar Sesion</p>
-            <input class="input_correo" type="text" placeholder="Escriba su correo electronico">
-            <input class="input_contra" type="text" placeholder="Escriba su contraseña">
-            <button class="boton_inicio"><a href="#" class="boton_inicio_texto">Entrar</a></button>
+            <input class="input_correo" type="email" placeholder="Escriba su correo electronico" required data-input>
+            <input class="input_contra" type="password" placeholder="Escriba su contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, una letra mayuscula, un numero y no puede contener caracteres especiales" data-input>
+            <button type="submit" class="boton_inicio">Entrar</button>
+            <span class="span">No esta registrado? Ingrese <a href="#">aquí</a></span>
         </div>
 
     </section>
@@ -42,7 +43,7 @@
     <section class="contacto">
         <div class="contacto__list">
             <div class="contacto__title">
-                <img src="img/LogoLogo.png" alt="img de alura geek" class="contacto__logo">
+                <img src="/assets/img/LogoLogo.png" alt="img de alura geek" class="contacto__logo">
             </div>
             <div class="contacto_link">
                 <a href="#">Quienes somos</a>
@@ -67,6 +68,8 @@
         <p class="footer_text">Desarrollado por Sofia Britos</p>
         <p class="footer_text">2022</p>
     </section>
+
+    <script src="js/loginValidaciones.js"></script>
 </body>
 
 </html>
