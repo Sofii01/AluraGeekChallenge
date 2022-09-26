@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgregarProductos</title>
+    <title>Producto</title>
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -17,33 +17,43 @@
             <div id="busqueda" class="invisible">
                 <form action="" class="busqueda_form">
                     <input type="search" class="busqueda__input" placeholder="¿Que deseas buscar?" name="busqueda">
-                    <button class="boton_busqueda"><img src="/assets/img/lupa.png" alt="lupa" class="img_busqueda"></button>
+                    <button class="boton_busqueda"><img src="/assets/img/lupa.png" alt="lupa"
+                            class="img_busqueda"></button>
                 </form>
             </div>
-            <button class="login"><a href="#boton_menuAdm" class="login_text">Menu administrador</a></button>
             <button id="invisible" class="boton_lupa"><img src="/assets/img/Vectormoblie.png" alt="lupa"
                     class="img_busqueda"></button>
-        </div>
 
+
+        </div>
     </header>
+    <section class="producto">
+        <div>
+            <div>
+                <img src="" alt="">
+                <div>
+                    <h1>Titulo del producto</h1>
+                    <p>Precio</p>
+                    <p>Descripcion</p>
 
-    <section class="nuevo_producto">
-        <div class="nuevo_producto_container">
-            <h1 class="producto_title">Agregar nuevo producto</h1>
-            <form class="producto_form">
-                <input type="url" class="producto_input" placeholder="Url de la imagen" required data-text>
-                <input type="text" class="producto_input" placeholder="Categorias" required data-text>
-                <input type="text" class="producto_input" placeholder="Nombre del produto" required data-text>
-                <input type="number" class="producto_input" placeholder="Precio del producto" required data-text>
-                <textarea name="descripcion del producto" class="producto_textarea" cols="30" rows="10" placeholder="Descripcion del producto" minlength="50" maxlength="300" data-text></textarea>
-                <button class="boton_agregar" data-button>Agregar producto</button>
-            </form>
-
-            
+                </div>
+            </div>
         </div>
+        <div>
+            <h1>productos similares</h1>
+            <div>
+                <ul>
+                    <li>Producto 1</li>
+                    <li>producto 2</li>
+                    <li>Producto 3</li>
+                    <li>Producto 4</li>
+                    <li>Producto 5</li>
+                    <li>Producto 5</li>
+                </ul>
+            </div>
+        </div>
+
     </section>
-
-
     <section class="contacto">
         <div class="contacto__list">
             <div class="contacto__title">
@@ -73,7 +83,6 @@
         <p class="footer_text">2022</p>
     </section>
 
-    <script src="/js/validaciones/agregarProductos.js"></script>
 </body>
 
 </html>

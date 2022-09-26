@@ -17,7 +17,8 @@
             <div id="busqueda" class="invisible">
                 <form action="" class="busqueda_form">
                     <input type="search" class="busqueda__input" placeholder="¿Que deseas buscar?" name="busqueda">
-                    <button class="boton_busqueda"><img src="/assets/img/lupa.png" alt="lupa" class="img_busqueda"></button>
+                    <button class="boton_busqueda"><img src="/assets/img/lupa.png" alt="lupa"
+                            class="img_busqueda"></button>
                 </form>
             </div>
             <button id="invisible" class="boton_lupa"><img src="/assets/img/Vectormoblie.png" alt="lupa"
@@ -29,11 +30,18 @@
 
     <section class="section_login">
         <div class="login_conteiner">
-            <p class="texto_inicio">Iniciar Sesion</p>
-            <input class="input_correo" type="email" placeholder="Escriba su correo electronico" required data-input>
-            <input class="input_contra" type="password" placeholder="Escriba su contraseña" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, una letra mayuscula, un numero y no puede contener caracteres especiales" data-input>
-            <button type="submit" class="boton_inicio">Entrar</button>
-            <span class="span">No esta registrado? Ingrese <a href="#">aquí</a></span>
+            <form class="login_form">
+                <p class="texto_inicio">Iniciar Sesion</p>
+                <input class="input_correo" type="email" placeholder="Escriba su correo electronico" required
+                    data-input>
+                <input class="input_contra" type="password" placeholder="Escriba su contraseña" required
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$"
+                    title="Al menos 6 caracteres, maximo 12, debe contener una letra minuscula, una letra mayuscula, un numero y no puede contener caracteres especiales"
+                    data-input>
+                <button type="submit" class="boton_inicio">Entrar</button>
+                <span class="span">No esta registrado? Ingrese <a href="#">aquí</a></span>
+            </form>
+
         </div>
 
     </section>
@@ -69,7 +77,7 @@
         <p class="footer_text">2022</p>
     </section>
 
-    <script src="js/loginValidaciones.js"></script>
+    <script src="js/validaciones/login.js"></script>
 </body>
 
 </html>

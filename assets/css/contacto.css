@@ -110,6 +110,9 @@ section a{
         display: flex;
         
     }
+    section a{
+        font-size: 1.3rem;
+    }
     .contacto_link{
         align-items: stretch;
     }
@@ -118,8 +121,21 @@ section a{
         width: 45%;
         align-items: flex-start;
     }
+    .contacto_text{
+        font-size: 1.3rem;
+    }
+    .contacto_input{
+        font-size: 1.2rem;
+    }
+    .contacto_textarea{
+        font-size: 1.2rem;
+    }
     .boton_submit{
         height: 5vh;
+        font-size: 1.3rem;
+    }
+    .footer_text{
+        font-size: 1.3rem;
     }
 
 }

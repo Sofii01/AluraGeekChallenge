@@ -1,4 +1,4 @@
-@import url("var.css");
+@import url("../var.css");
 
 .section_login{
     background: var(--color-gris-clarito);
@@ -9,14 +9,16 @@
 .login_conteiner{
     display: flex;
     flex-direction: column;
-    width: 80%;
-    align-items: center;
-    gap: 1.5rem;
 }
 .texto_inicio{
     font-size: 1rem;
     font-weight: 700;
     color: var(--color-gris);
+}
+.login_form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;    
 }
 .input_correo, .input_contra{
     border: none;
@@ -32,6 +34,7 @@
     height: 2.5rem;
     max-width: 5rem;
     width:40%;
+    color: var(--color-blanco);
 }
 .boton_inicio_texto{
     color: var(--color-blanco);
@@ -47,7 +50,19 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .texto_inicio{
+        font-size: 1.8rem;
+    }
+    .input_correo, .input_contra{
+        height: 4rem;
+    }
     .input_correo, .input_contra, .boton_inicio{
-        max-width: 50%;
-    }    
+        max-width: 70%;
+        height: 3.5rem;
+        font-size: 1.3rem;
+    } 
+    .login_form{
+        width: 80%;
+        align-items: center;
+    }   
 }

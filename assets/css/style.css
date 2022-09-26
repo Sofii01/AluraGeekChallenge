@@ -1,9 +1,9 @@
 @import url("var.css");
 @import url("bannerProductos.css");
 @import url("contacto.css");
-@import url("loginStyle.css");
-@import url("productos.css");
-@import url("agregarProdStyle.css");
+@import url("componentes/agregarProductos.css");
+@import url("componentes/login.css");
+@import url("componentes/productos.css");
 body{
     font-family: var(--font-family);
     font-weight: 700;
@@ -58,7 +58,7 @@ a{
 
   
 .input-container--invalid{
-    border: 1px solid #D2001A;
+    border: 3px solid #e6001b;
     border-radius: 7px;
 }
 
@@ -111,5 +111,19 @@ a{
     }
 }
 @media screen and (min-width: 1024px) {
-
+    .cabecera__logo{
+        width: 12rem;
+    }
+    #busqueda{
+        width: 28rem;
+        height: 4rem;
+    }
+    .busqueda_form{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .busqueda__input{
+        font-size: 1.12rem;
+        height: 4rem;
+    }
 }

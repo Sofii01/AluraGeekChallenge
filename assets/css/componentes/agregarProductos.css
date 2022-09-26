@@ -1,5 +1,7 @@
 .nuevo_producto{
     background: var(--color-gris-clarito);
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 .nuevo_producto_container{
     padding-top: 1.5rem;
@@ -46,7 +48,18 @@
         padding-left: 20%;
         width: 70%;
     }
+    .producto_title{
+        font-size: 2rem;
+    }
     .producto_input, .producto_textarea, .boton_agregar{
         max-width: 85%;
+    }
+    .producto_input, .producto_textarea{
+        height: 4rem;
+        font-size: 1.67rem;
+    }
+    .boton_agregar{
+        height: 2.87rem;
+        font-size: 1.57rem;
     }
 }
