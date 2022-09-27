@@ -33,7 +33,7 @@ const actualizarProducto = (id)=>{
             precio.value, 
             descripcion.value,
             id
-        ).then(()=>console.log("Producto actualizado")).catch((error)=>console.log("ocurrio un error al actualizar el producto"));
+        ).then(()=>console.log("Producto actualizado")).catch((error)=>console.log("ocurrio un error al actualizar el producto" + error));
     });
 };
 buscarProduct();

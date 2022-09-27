@@ -1,9 +1,11 @@
 import { productoSevice } from "../service/producto-service.js";
+import { validarInputs } from "../js/validaciones/agregarProductos.js";
 
 const btnAgregarProducto = document.querySelector("[data-button]");
 // obtenemos los datos del formulario
-btnAgregarProducto.addEventListener("click", (event) => {
+btnAgregarProducto.addEventListener("submit", (event) => {
     event.preventDefault();
+    validarInputs();
     const img = document.querySelector("[data-url]").value;
     const section = document.querySelector("[data-categoria]").value;
     const nombre = document.querySelector("[data-nombre]").value;
@@ -11,9 +13,12 @@ btnAgregarProducto.addEventListener("click", (event) => {
     const descripcion = document.querySelector("[data-descripcion]").value;
 
     productoSevice.crearProducto(img, section, nombre, precio, descripcion).then(() => {
-        // window.location.href = "";
+        alert("Registro completo");
+        window.location.href = "../listaProductos.html";
         console.log("Se completo");
-    }).catch((error) => console.log("Ocurrio un error"));
+    }).catch((error) => console.log("Ocurrio un error"+error));
+    const card = nuevoProducto(img, nombre, precio, id.uuid.v4());
+
 });
 //ahora lo creamos para listaProductos.html
 const nuevoProducto = (img,nombre, precio,id) =>{
@@ -73,11 +78,11 @@ const agregarPorSection = (productList) => {
     productList.forEach(({ nombre, precio, img, id, section }) => {
         const card = newProduct(img,nombre, precio, id);
         if (section === "Star Wars") {
-            starwars.appendChild(card);
+            starwars.innerHTML += card;
         } else if (section === "consolas") {
-            consolas.appendChild(card);
+            consolas.innerHTML += card;
         } else {
-            diversos.appendChild(card);
+            diversos.innerHTML += card;
         }
     });
 };
