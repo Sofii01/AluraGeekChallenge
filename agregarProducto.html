@@ -30,12 +30,12 @@
     <section class="nuevo_producto">
         <div class="nuevo_producto_container">
             <h1 class="producto_title">Agregar nuevo producto</h1>
-            <form class="producto_form">
-                <input type="url" class="producto_input" placeholder="Url de la imagen" required data-text>
-                <input type="text" class="producto_input" placeholder="Categorias" required data-text>
-                <input type="text" class="producto_input" placeholder="Nombre del produto" required data-text>
-                <input type="number" class="producto_input" placeholder="Precio del producto" required data-text>
-                <textarea name="descripcion del producto" class="producto_textarea" cols="30" rows="10" placeholder="Descripcion del producto" minlength="50" maxlength="300" data-text></textarea>
+            <form class="producto_form" data-formulario>
+                <input type="url" class="producto_input" placeholder="Url de la imagen" required data-url>
+                <input type="text" class="producto_input" placeholder="Categorias" required data-categoria>
+                <input type="text" class="producto_input" placeholder="Nombre del produto" required data-nombre>
+                <input type="number" class="producto_input" placeholder="Precio del producto" required data-precio>
+                <textarea name="descripcion del producto" class="producto_textarea" cols="30" rows="10" placeholder="Descripcion del producto" minlength="50" maxlength="300" data-descripcion></textarea>
                 <button class="boton_agregar" data-button>Agregar producto</button>
             </form>
 
@@ -72,8 +72,10 @@
         <p class="footer_text">Desarrollado por Sofia Britos</p>
         <p class="footer_text">2022</p>
     </section>
-
-    <script src="/js/validaciones/agregarProductos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/js/validaciones/agregarProductos.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./controllers/crearProducto.js"></script>
 </body>
 
 </html>

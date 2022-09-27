@@ -1,9 +1,148 @@
 {
-    "perfil": [
+    "product": [
       {
-        "nombre": "Harland Lohora",
-        "email": "harland@alura.com",
-        "id": 1
+        "name": "Producto 123",
+        "image": "./assents/img/starwars1.png",
+        "id": 1,
+        "precio": 60,
+        "section": "Star Wars",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 345",
+        "image": "./assents/img/starwars2.png",
+        "id": 2,
+        "precio": 60,
+        "section": "Star Wars",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 678",
+        "image": "./assents/img/starwars3.png",
+        "id": 3,
+        "precio": 60,
+        "section": "Star Wars",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 901",
+        "image": "./assents/img/starwars4.png",
+        "id": 4,
+        "precio": 60,
+        "section": "Star Wars",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 234",
+        "image": "./assents/img/starwars5.png",
+        "id": 5,
+        "precio": 60,
+        "section": "Star Wars",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 567",
+        "image": "./assents/img/starwars6.png",
+        "id": 6,
+        "precio": 60,
+        "section": "Star Wars",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 123",
+        "image": "./assents/img/consola1.png",
+        "id": 7,
+        "precio": 60,
+        "section": "Consolas",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 456",
+        "image": "./assents/img/consola2.png",
+        "id": 8,
+        "precio": 60,
+        "section": "Consolas",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 789",
+        "image": "./assents/img/consola3.png",
+        "id": 9,
+        "precio": 60,
+        "section": "Consolas",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 012",
+        "image": "./assents/img/consola4.png",
+        "id": 10,
+        "precio": 60,
+        "section": "Consolas",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 345",
+        "image": "./assents/img/consola5.png",
+        "id": 11,
+        "precio": 60,
+        "section": "Consolas",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 678",
+        "image": "./assents/img/consola6.png",
+        "id": 12,
+        "precio": 60,
+        "section": "Consolas",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 123",
+        "image": "./assents/img/diversos1.png",
+        "id": 13,
+        "precio": 60,
+        "section": "Diversos",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 456",
+        "image": "./assents/img/diversos2.png",
+        "id": 14,
+        "precio": 60,
+        "section": "Diversos",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 789",
+        "image": "./assents/img/diversos3.png",
+        "id": 15,
+        "precio": 60,
+        "section": "Diversos",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 012",
+        "image": "./assents/img/diversos4.png",
+        "id": 16,
+        "precio": 60,
+        "section": "Diversos",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 345",
+        "image": "./assents/img/diversos5.png",
+        "id": 17,
+        "precio": 60,
+        "section": "Diversos",
+        "descripcion": "Descripcion del producto"
+      },
+      {
+        "name": "Producto 678",
+        "image": "./assents/img/diversos6.png",
+        "id": 18,
+        "precio": 60,
+        "section": "Diversos",
+        "descripcion": "Descripcion del producto"
       }
     ]
 }
